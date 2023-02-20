@@ -271,12 +271,39 @@ div.position-reset {
 .small-background {
   background-image: url('../img/image2.png');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   /* width: 1461px; */
   height: 100%;
   margin: 0 auto 227px;
   text-align: center;
   padding: 533px 264px 40px;
+}
+
+.slider-btns {
+  display: grid;
+  /* grid-column: 1fr 1fr; */
+  grid-template-columns: 1fr 1fr;
+  background-color: red;
+}
+
+.slider-btns-left {
+  /* background-color: red; */
+  text-align: left;
+}
+
+.slider-btns-left img {
+  position: absolute;
+  left: 10%;
+}
+
+.slider-btns-right {
+  /* background-color: green; */
+  text-align: right;
+}
+
+.slider-btns-right img {
+  position: absolute;
+  right: 10%;
 }
 
 
@@ -330,6 +357,10 @@ div.position-reset {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+
+}
+
+.small-background-read-more a {
   color: #FBD784;
 }
 
@@ -438,10 +469,14 @@ div.position-reset {
 }
 
 .item:first-child {
-  color: #FFD1A0;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 0px;
+}
+
+.first-link {
+  color: #FFD1A0;
 }
 
 .footer-conclusion {
